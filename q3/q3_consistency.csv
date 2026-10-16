@@ -1,0 +1,11 @@
+variant,msg_id,n,issue_category,issue_category_stable,urgency,urgency_stable,recommended_team,recommended_team_stable
+original,M1,3,Environmental & Facilities Management/Environmental - Water Management/None,False,HIGH/None,False,Facilities & Maintenance/None,False
+original,M2,3,None/Waste Management,False,MEDIUM/None,False,Facilities Management/None,False
+original,M3,3,Accessibility / Facilities/None,False,HIGH/None,False,Facilities Management/None,False
+original,E1,3,None,True,None,True,None,True
+original,E2,3,Energy Efficiency/Energy Efficiency / Facilities,False,LOW,True,Facilities Management,True
+revised,M1,3,WATER_AND_UTILITIES,True,HIGH,True,FACILITIES,True
+revised,M2,3,WASTE_AND_RECYCLING,True,MEDIUM,True,SUSTAINABILITY,True
+revised,M3,3,ACCESSIBILITY_AND_INCLUSION,True,HIGH,True,ACCESSIBILITY_AND_INCLUSION,True
+revised,E1,3,ACCESSIBILITY_AND_INCLUSION,True,HIGH,True,ACCESSIBILITY_AND_INCLUSION,True
+revised,E2,3,ENERGY_EFFICIENCY,True,LOW,True,FACILITIES/SUSTAINABILITY,False

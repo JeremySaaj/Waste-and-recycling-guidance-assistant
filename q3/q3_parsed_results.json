@@ -1,0 +1,801 @@
+[
+  {
+    "msg_id": "M1",
+    "variant": "original",
+    "rep": 1,
+    "model": "gemini-3.8-flash",
+    "raw": "{\n  \"issue_category\": \"Environmental & Facilities Management\",\n  \"urgency\": \"HIGH\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"Facilities & Maintenance\",\n  \"escalation_reason\": \"Continuous resource waste and potential structural/water damage from an uncontained leak\",\n  \"data_sensitivity_risk\": \"LOW\",\n  \"brief_summary\": \"Active water leak running all morning in Building C requiring immediate maintenance intervention.\"\n}",
+    "parse_error": null,
+    "problems": [
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "off_taxonomy:issue_category=Environmental & Facilities Management",
+      "off_taxonomy:recommended_team=Facilities & Maintenance",
+      "off_taxonomy:escalation_reason=Continuous resource waste and potential structural/water damage from an uncontained leak",
+      "off_taxonomy:data_sensitivity_risk=LOW"
+    ],
+    "record": {
+      "issue_category": "Environmental & Facilities Management",
+      "urgency": "HIGH",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "Facilities & Maintenance",
+      "escalation_reason": "Continuous resource waste and potential structural/water damage from an uncontained leak",
+      "data_sensitivity_risk": "LOW",
+      "brief_summary": "Active water leak running all morning in Building C requiring immediate maintenance intervention."
+    }
+  },
+  {
+    "msg_id": "M1",
+    "variant": "revised",
+    "rep": 1,
+    "model": "gemini-3.8-flash",
+    "raw": "{\"issue_category\":\"WATER_AND_UTILITIES\",\"urgency\":\"HIGH\",\"sentiment\":\"NEUTRAL\",\"followup_required\":\"Y\",\"recommended_team\":\"FACILITIES\",\"escalation_reason\":\"ONGOING_DAMAGE_OR_DISRUPTION\",\"data_sensitivity_risk\":\"NONE\",\"multiple_issues_detected\":false,\"confidence\":\"HIGH\",\"needs_human_review\":true,\"brief_summary\":\"A water leak in Building C has been running all morning.\"}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "WATER_AND_UTILITIES",
+      "urgency": "HIGH",
+      "sentiment": "NEUTRAL",
+      "followup_required": "Y",
+      "recommended_team": "FACILITIES",
+      "escalation_reason": "ONGOING_DAMAGE_OR_DISRUPTION",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "A water leak in Building C has been running all morning."
+    }
+  },
+  {
+    "msg_id": "M1",
+    "variant": "original",
+    "rep": 2,
+    "model": "gemini-3.8-flash",
+    "raw": "{\n  \"issues\": [\n    {\n      \"issue_category\": \"Environmental / Facilities Management\",\n      \"urgency\": \"HIGH\",\n      \"sentiment\": \"NEGATIVE\",\n      \"followup_required\": \"Y\",\n      \"recommended_team\": \"Facilities & Maintenance\",\n      \"escalation_reason\": \"Ongoing uncontrolled water loss leading to resource waste and potential structural or property damage.\",\n      \"data_sensitivity_risk\": \"LOW\",\n      \"brief_summary\": \"Unresolved water leak reported in Building C that has been running all morning.\"\n    }\n  ]\n}",
+    "parse_error": null,
+    "problems": [
+      "missing:issue_category",
+      "missing:urgency",
+      "missing:sentiment",
+      "missing:followup_required",
+      "missing:recommended_team",
+      "missing:escalation_reason",
+      "missing:data_sensitivity_risk",
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "missing:brief_summary"
+    ],
+    "record": {
+      "issues": [
+        {
+          "issue_category": "Environmental / Facilities Management",
+          "urgency": "HIGH",
+          "sentiment": "NEGATIVE",
+          "followup_required": "Y",
+          "recommended_team": "Facilities & Maintenance",
+          "escalation_reason": "Ongoing uncontrolled water loss leading to resource waste and potential structural or property damage.",
+          "data_sensitivity_risk": "LOW",
+          "brief_summary": "Unresolved water leak reported in Building C that has been running all morning."
+        }
+      ]
+    }
+  },
+  {
+    "msg_id": "M1",
+    "variant": "revised",
+    "rep": 2,
+    "model": "gemini-3.8-flash",
+    "raw": "{\"issue_category\":\"WATER_AND_UTILITIES\",\"urgency\":\"HIGH\",\"sentiment\":\"NEUTRAL\",\"followup_required\":\"Y\",\"recommended_team\":\"FACILITIES\",\"escalation_reason\":\"ONGOING_DAMAGE_OR_DISRUPTION\",\"data_sensitivity_risk\":\"NONE\",\"multiple_issues_detected\":false,\"confidence\":\"HIGH\",\"needs_human_review\":true,\"brief_summary\":\"A water leak in Building C has been actively running all morning.\"}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "WATER_AND_UTILITIES",
+      "urgency": "HIGH",
+      "sentiment": "NEUTRAL",
+      "followup_required": "Y",
+      "recommended_team": "FACILITIES",
+      "escalation_reason": "ONGOING_DAMAGE_OR_DISRUPTION",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "A water leak in Building C has been actively running all morning."
+    }
+  },
+  {
+    "msg_id": "M1",
+    "variant": "original",
+    "rep": 3,
+    "model": "gemini-3.8-flash",
+    "raw": "{\n  \"issue_category\": \"Environmental - Water Management\",\n  \"urgency\": \"HIGH\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"Facilities & Maintenance\",\n  \"escalation_reason\": \"Active and uncontained water loss presenting risks of facility damage, safety hazards, and resource waste\",\n  \"data_sensitivity_risk\": \"LOW\",\n  \"brief_summary\": \"Active water leak reported in Building C that has been continuously running all morning.\"\n}",
+    "parse_error": null,
+    "problems": [
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "off_taxonomy:issue_category=Environmental - Water Management",
+      "off_taxonomy:recommended_team=Facilities & Maintenance",
+      "off_taxonomy:escalation_reason=Active and uncontained water loss presenting risks of facility damage, safety hazards, and resource waste",
+      "off_taxonomy:data_sensitivity_risk=LOW"
+    ],
+    "record": {
+      "issue_category": "Environmental - Water Management",
+      "urgency": "HIGH",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "Facilities & Maintenance",
+      "escalation_reason": "Active and uncontained water loss presenting risks of facility damage, safety hazards, and resource waste",
+      "data_sensitivity_risk": "LOW",
+      "brief_summary": "Active water leak reported in Building C that has been continuously running all morning."
+    }
+  },
+  {
+    "msg_id": "M1",
+    "variant": "revised",
+    "rep": 3,
+    "model": "gemini-3.8-flash",
+    "raw": "{\"issue_category\":\"WATER_AND_UTILITIES\",\"urgency\":\"HIGH\",\"sentiment\":\"NEUTRAL\",\"followup_required\":\"Y\",\"recommended_team\":\"FACILITIES\",\"escalation_reason\":\"ONGOING_DAMAGE_OR_DISRUPTION\",\"data_sensitivity_risk\":\"NONE\",\"multiple_issues_detected\":false,\"confidence\":\"HIGH\",\"needs_human_review\":true,\"brief_summary\":\"An ongoing water leak in Building C has been running all morning.\"}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "WATER_AND_UTILITIES",
+      "urgency": "HIGH",
+      "sentiment": "NEUTRAL",
+      "followup_required": "Y",
+      "recommended_team": "FACILITIES",
+      "escalation_reason": "ONGOING_DAMAGE_OR_DISRUPTION",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "An ongoing water leak in Building C has been running all morning."
+    }
+  },
+  {
+    "msg_id": "M2",
+    "variant": "original",
+    "rep": 1,
+    "model": "gemini-3.8-flash",
+    "raw": "{\n  \"issues\": [\n    {\n      \"issue_category\": \"Waste Management\",\n      \"urgency\": \"LOW\",\n      \"sentiment\": \"NEGATIVE\",\n      \"followup_required\": \"Y\",\n      \"recommended_team\": \"Facilities Management\",\n      \"escalation_reason\": \"Recurring contamination in recycling streams due to lack of oversight\",\n      \"data_sensitivity_risk\": \"LOW\",\n      \"brief_summary\": \"Recycling bins are repeatedly contaminated and lack operational monitoring.\"\n    }\n  ]\n}",
+    "parse_error": null,
+    "problems": [
+      "missing:issue_category",
+      "missing:urgency",
+      "missing:sentiment",
+      "missing:followup_required",
+      "missing:recommended_team",
+      "missing:escalation_reason",
+      "missing:data_sensitivity_risk",
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "missing:brief_summary"
+    ],
+    "record": {
+      "issues": [
+        {
+          "issue_category": "Waste Management",
+          "urgency": "LOW",
+          "sentiment": "NEGATIVE",
+          "followup_required": "Y",
+          "recommended_team": "Facilities Management",
+          "escalation_reason": "Recurring contamination in recycling streams due to lack of oversight",
+          "data_sensitivity_risk": "LOW",
+          "brief_summary": "Recycling bins are repeatedly contaminated and lack operational monitoring."
+        }
+      ]
+    }
+  },
+  {
+    "msg_id": "M2",
+    "variant": "revised",
+    "rep": 1,
+    "model": "gemini-3.8-flash",
+    "raw": "{\"issue_category\":\"WASTE_AND_RECYCLING\",\"urgency\":\"MEDIUM\",\"sentiment\":\"NEGATIVE\",\"followup_required\":\"Y\",\"recommended_team\":\"SUSTAINABILITY\",\"escalation_reason\":\"INSUFFICIENT_INFORMATION\",\"data_sensitivity_risk\":\"NONE\",\"multiple_issues_detected\":false,\"confidence\":\"LOW\",\"needs_human_review\":true,\"brief_summary\":\"The employee reports recurring contamination in recycling bins without specifying the location.\"}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "WASTE_AND_RECYCLING",
+      "urgency": "MEDIUM",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "SUSTAINABILITY",
+      "escalation_reason": "INSUFFICIENT_INFORMATION",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "LOW",
+      "needs_human_review": true,
+      "brief_summary": "The employee reports recurring contamination in recycling bins without specifying the location."
+    }
+  },
+  {
+    "msg_id": "M2",
+    "variant": "original",
+    "rep": 2,
+    "model": "gemini-3.8-flash",
+    "raw": "{\n  \"issues\": [\n    {\n      \"issue_category\": \"Waste Management\",\n      \"urgency\": \"MEDIUM\",\n      \"sentiment\": \"NEGATIVE\",\n      \"followup_required\": \"Y\",\n      \"recommended_team\": \"Facilities Management\",\n      \"escalation_reason\": \"Recurring recycling contamination risks sending recyclable materials to landfills and indicates a failure in routine facility monitoring.\",\n      \"data_sensitivity_risk\": \"Low\",\n      \"brief_summary\": \"Recycling bins are repeatedly contaminated due to an apparent lack of oversight and monitoring.\"\n    }\n  ]\n}",
+    "parse_error": null,
+    "problems": [
+      "missing:issue_category",
+      "missing:urgency",
+      "missing:sentiment",
+      "missing:followup_required",
+      "missing:recommended_team",
+      "missing:escalation_reason",
+      "missing:data_sensitivity_risk",
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "missing:brief_summary"
+    ],
+    "record": {
+      "issues": [
+        {
+          "issue_category": "Waste Management",
+          "urgency": "MEDIUM",
+          "sentiment": "NEGATIVE",
+          "followup_required": "Y",
+          "recommended_team": "Facilities Management",
+          "escalation_reason": "Recurring recycling contamination risks sending recyclable materials to landfills and indicates a failure in routine facility monitoring.",
+          "data_sensitivity_risk": "Low",
+          "brief_summary": "Recycling bins are repeatedly contaminated due to an apparent lack of oversight and monitoring."
+        }
+      ]
+    }
+  },
+  {
+    "msg_id": "M2",
+    "variant": "revised",
+    "rep": 2,
+    "model": "gemini-3.8-flash",
+    "raw": "{\"issue_category\":\"WASTE_AND_RECYCLING\",\"urgency\":\"MEDIUM\",\"sentiment\":\"NEGATIVE\",\"followup_required\":\"Y\",\"recommended_team\":\"SUSTAINABILITY\",\"escalation_reason\":\"INSUFFICIENT_INFORMATION\",\"data_sensitivity_risk\":\"NONE\",\"multiple_issues_detected\":false,\"confidence\":\"LOW\",\"needs_human_review\":true,\"brief_summary\":\"Employee reports recurring contamination of recycling bins and lack of monitoring without specifying a location.\"}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "WASTE_AND_RECYCLING",
+      "urgency": "MEDIUM",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "SUSTAINABILITY",
+      "escalation_reason": "INSUFFICIENT_INFORMATION",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "LOW",
+      "needs_human_review": true,
+      "brief_summary": "Employee reports recurring contamination of recycling bins and lack of monitoring without specifying a location."
+    }
+  },
+  {
+    "msg_id": "M2",
+    "variant": "original",
+    "rep": 3,
+    "model": "gemini-3.8-flash",
+    "raw": "{\n  \"issue_category\": \"Waste Management\",\n  \"urgency\": \"MEDIUM\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"Facilities Management\",\n  \"escalation_reason\": \"Recurring contamination of recycling bins indicating a breakdown in sorting practices and lack of routine monitoring.\",\n  \"data_sensitivity_risk\": \"LOW\",\n  \"brief_summary\": \"Employee reported recurring contamination in recycling bins and an apparent absence of monitoring or enforcement.\"\n}",
+    "parse_error": null,
+    "problems": [
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "off_taxonomy:issue_category=Waste Management",
+      "off_taxonomy:recommended_team=Facilities Management",
+      "off_taxonomy:escalation_reason=Recurring contamination of recycling bins indicating a breakdown in sorting practices and lack of routine monitoring.",
+      "off_taxonomy:data_sensitivity_risk=LOW"
+    ],
+    "record": {
+      "issue_category": "Waste Management",
+      "urgency": "MEDIUM",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "Facilities Management",
+      "escalation_reason": "Recurring contamination of recycling bins indicating a breakdown in sorting practices and lack of routine monitoring.",
+      "data_sensitivity_risk": "LOW",
+      "brief_summary": "Employee reported recurring contamination in recycling bins and an apparent absence of monitoring or enforcement."
+    }
+  },
+  {
+    "msg_id": "M2",
+    "variant": "revised",
+    "rep": 3,
+    "model": "gemini-3.8-flash",
+    "raw": "{\"issue_category\":\"WASTE_AND_RECYCLING\",\"urgency\":\"MEDIUM\",\"sentiment\":\"NEGATIVE\",\"followup_required\":\"Y\",\"recommended_team\":\"SUSTAINABILITY\",\"escalation_reason\":\"INSUFFICIENT_INFORMATION\",\"data_sensitivity_risk\":\"NONE\",\"multiple_issues_detected\":false,\"confidence\":\"LOW\",\"needs_human_review\":true,\"brief_summary\":\"An employee reports recurring contamination of recycling bins and a lack of monitoring.\"}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "WASTE_AND_RECYCLING",
+      "urgency": "MEDIUM",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "SUSTAINABILITY",
+      "escalation_reason": "INSUFFICIENT_INFORMATION",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "LOW",
+      "needs_human_review": true,
+      "brief_summary": "An employee reports recurring contamination of recycling bins and a lack of monitoring."
+    }
+  },
+  {
+    "msg_id": "M3",
+    "variant": "original",
+    "rep": 1,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "```json\n{\n  \"issues\": [\n    {\n      \"issue_category\": \"Accessibility\",\n      \"urgency\": \"HIGH\",\n      \"sentiment\": \"NEGATIVE\",\n      \"followup_required\": \"Y\",\n      \"recommended_team\": \"Facilities Management\",\n      \"escalation_reason\": \"Accessible entrance has been blocked for two days, violating accessibility standards and impacting employee/visitor mobility.\",\n      \"data_sensitivity_risk\": \"Low\",\n      \"brief_summary\": \"The accessible entrance near the main building has been blocked for the past two days.\"\n    }\n  ]\n}\n```",
+    "parse_error": null,
+    "problems": [
+      "missing:issue_category",
+      "missing:urgency",
+      "missing:sentiment",
+      "missing:followup_required",
+      "missing:recommended_team",
+      "missing:escalation_reason",
+      "missing:data_sensitivity_risk",
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "missing:brief_summary"
+    ],
+    "record": {
+      "issues": [
+        {
+          "issue_category": "Accessibility",
+          "urgency": "HIGH",
+          "sentiment": "NEGATIVE",
+          "followup_required": "Y",
+          "recommended_team": "Facilities Management",
+          "escalation_reason": "Accessible entrance has been blocked for two days, violating accessibility standards and impacting employee/visitor mobility.",
+          "data_sensitivity_risk": "Low",
+          "brief_summary": "The accessible entrance near the main building has been blocked for the past two days."
+        }
+      ]
+    }
+  },
+  {
+    "msg_id": "M3",
+    "variant": "revised",
+    "rep": 1,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issue_category\": \"ACCESSIBILITY_AND_INCLUSION\",\n  \"urgency\": \"HIGH\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"ACCESSIBILITY_AND_INCLUSION\",\n  \"escalation_reason\": \"ACCESSIBILITY_BARRIER\",\n  \"data_sensitivity_risk\": \"NONE\",\n  \"multiple_issues_detected\": false,\n  \"confidence\": \"HIGH\",\n  \"needs_human_review\": true,\n  \"brief_summary\": \"The accessible entrance near the main building has been blocked for two days.\"\n}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "ACCESSIBILITY_AND_INCLUSION",
+      "urgency": "HIGH",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "ACCESSIBILITY_AND_INCLUSION",
+      "escalation_reason": "ACCESSIBILITY_BARRIER",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "The accessible entrance near the main building has been blocked for two days."
+    }
+  },
+  {
+    "msg_id": "M3",
+    "variant": "original",
+    "rep": 2,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "```json\n{\n  \"issue_category\": \"Accessibility / Facilities\",\n  \"urgency\": \"HIGH\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"Facilities Management\",\n  \"escalation_reason\": \"The accessible entrance has been blocked for two days, posing a safety hazard and potential ADA/accessibility compliance violation.\",\n  \"data_sensitivity_risk\": \"LOW\",\n  \"brief_summary\": \"The accessible entrance near the main building has been blocked for two days.\"\n}\n```",
+    "parse_error": null,
+    "problems": [
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "off_taxonomy:issue_category=Accessibility / Facilities",
+      "off_taxonomy:recommended_team=Facilities Management",
+      "off_taxonomy:escalation_reason=The accessible entrance has been blocked for two days, posing a safety hazard and potential ADA/accessibility compliance violation.",
+      "off_taxonomy:data_sensitivity_risk=LOW"
+    ],
+    "record": {
+      "issue_category": "Accessibility / Facilities",
+      "urgency": "HIGH",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "Facilities Management",
+      "escalation_reason": "The accessible entrance has been blocked for two days, posing a safety hazard and potential ADA/accessibility compliance violation.",
+      "data_sensitivity_risk": "LOW",
+      "brief_summary": "The accessible entrance near the main building has been blocked for two days."
+    }
+  },
+  {
+    "msg_id": "M3",
+    "variant": "revised",
+    "rep": 2,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\"issue_category\":\"ACCESSIBILITY_AND_INCLUSION\",\"urgency\":\"HIGH\",\"sentiment\":\"NEGATIVE\",\"followup_required\":\"Y\",\"recommended_team\":\"ACCESSIBILITY_AND_INCLUSION\",\"escalation_reason\":\"ACCESSIBILITY_BARRIER\",\"data_sensitivity_risk\":\"NONE\",\"multiple_issues_detected\":false,\"confidence\":\"HIGH\",\"needs_human_review\":true,\"brief_summary\":\"The accessible entrance near the main building has been blocked for two days.\"}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "ACCESSIBILITY_AND_INCLUSION",
+      "urgency": "HIGH",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "ACCESSIBILITY_AND_INCLUSION",
+      "escalation_reason": "ACCESSIBILITY_BARRIER",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "The accessible entrance near the main building has been blocked for two days."
+    }
+  },
+  {
+    "msg_id": "M3",
+    "variant": "original",
+    "rep": 3,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issues\": [\n    {\n      \"issue_category\": \"Accessibility\",\n      \"urgency\": \"HIGH\",\n      \"sentiment\": \"NEGATIVE\",\n      \"followup_required\": \"Y\",\n      \"recommended_team\": \"Facilities Management\",\n      \"escalation_reason\": \"Blocked accessible entrance violates compliance and impedes inclusivity/safety for two consecutive days.\",\n      \"data_sensitivity_risk\": \"LOW\",\n      \"brief_summary\": \"The accessible entrance near the main building has been blocked for two days.\"\n    }\n  ]\n}",
+    "parse_error": null,
+    "problems": [
+      "missing:issue_category",
+      "missing:urgency",
+      "missing:sentiment",
+      "missing:followup_required",
+      "missing:recommended_team",
+      "missing:escalation_reason",
+      "missing:data_sensitivity_risk",
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "missing:brief_summary"
+    ],
+    "record": {
+      "issues": [
+        {
+          "issue_category": "Accessibility",
+          "urgency": "HIGH",
+          "sentiment": "NEGATIVE",
+          "followup_required": "Y",
+          "recommended_team": "Facilities Management",
+          "escalation_reason": "Blocked accessible entrance violates compliance and impedes inclusivity/safety for two consecutive days.",
+          "data_sensitivity_risk": "LOW",
+          "brief_summary": "The accessible entrance near the main building has been blocked for two days."
+        }
+      ]
+    }
+  },
+  {
+    "msg_id": "M3",
+    "variant": "revised",
+    "rep": 3,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issue_category\": \"ACCESSIBILITY_AND_INCLUSION\",\n  \"urgency\": \"HIGH\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"ACCESSIBILITY_AND_INCLUSION\",\n  \"escalation_reason\": \"ACCESSIBILITY_BARRIER\",\n  \"data_sensitivity_risk\": \"NONE\",\n  \"multiple_issues_detected\": false,\n  \"confidence\": \"HIGH\",\n  \"needs_human_review\": true,\n  \"brief_summary\": \"The accessible entrance near the main building has been blocked for two days.\"\n}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "ACCESSIBILITY_AND_INCLUSION",
+      "urgency": "HIGH",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "ACCESSIBILITY_AND_INCLUSION",
+      "escalation_reason": "ACCESSIBILITY_BARRIER",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "The accessible entrance near the main building has been blocked for two days."
+    }
+  },
+  {
+    "msg_id": "E1",
+    "variant": "original",
+    "rep": 1,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issues\": [\n    {\n      \"issue_category\": \"Diversity, Equity & Inclusion / Accessibility\",\n      \"urgency\": \"HIGH\",\n      \"sentiment\": \"NEGATIVE\",\n      \"followup_required\": \"Y\",\n      \"recommended_team\": \"Human Resources / Employee Relations\",\n      \"escalation_reason\": \"Allegation of discrimination related to disability accommodation and refusal of necessary software licence.\",\n      \"data_sensitivity_risk\": \"HIGH\",\n      \"brief_summary\": \"Priya Sharma reports that her manager, Tom, is ignoring her requests for a screen reader licence, leading to feelings of discrimination. She has requested confidentiality.\"\n    }\n  ]\n}",
+    "parse_error": null,
+    "problems": [
+      "missing:issue_category",
+      "missing:urgency",
+      "missing:sentiment",
+      "missing:followup_required",
+      "missing:recommended_team",
+      "missing:escalation_reason",
+      "missing:data_sensitivity_risk",
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "missing:brief_summary"
+    ],
+    "record": {
+      "issues": [
+        {
+          "issue_category": "Diversity, Equity & Inclusion / Accessibility",
+          "urgency": "HIGH",
+          "sentiment": "NEGATIVE",
+          "followup_required": "Y",
+          "recommended_team": "Human Resources / Employee Relations",
+          "escalation_reason": "Allegation of discrimination related to disability accommodation and refusal of necessary software licence.",
+          "data_sensitivity_risk": "HIGH",
+          "brief_summary": "Priya Sharma reports that her manager, Tom, is ignoring her requests for a screen reader licence, leading to feelings of discrimination. She has requested confidentiality."
+        }
+      ]
+    }
+  },
+  {
+    "msg_id": "E1",
+    "variant": "revised",
+    "rep": 1,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issue_category\": \"ACCESSIBILITY_AND_INCLUSION\",\n  \"urgency\": \"HIGH\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"ACCESSIBILITY_AND_INCLUSION\",\n  \"escalation_reason\": \"ACCESSIBILITY_BARRIER\",\n  \"data_sensitivity_risk\": \"SENSITIVE_INFORMATION\",\n  \"multiple_issues_detected\": false,\n  \"confidence\": \"HIGH\",\n  \"needs_human_review\": true,\n  \"brief_summary\": \"An employee reports discrimination after a manager ignored requests for a screen reader licence.\"\n}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "ACCESSIBILITY_AND_INCLUSION",
+      "urgency": "HIGH",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "ACCESSIBILITY_AND_INCLUSION",
+      "escalation_reason": "ACCESSIBILITY_BARRIER",
+      "data_sensitivity_risk": "SENSITIVE_INFORMATION",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "An employee reports discrimination after a manager ignored requests for a screen reader licence."
+    }
+  },
+  {
+    "msg_id": "E1",
+    "variant": "original",
+    "rep": 2,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "```json\n{\n  \"issues\": [\n    {\n      \"issue_category\": \"Diversity, Equity and Inclusion / Accessibility\",\n      \"urgency\": \"HIGH\",\n      \"sentiment\": \"NEGATIVE\",\n      \"followup_required\": \"Y\",\n      \"recommended_team\": \"Human Resources / Employee Relations\",\n      \"escalation_reason\": \"Allegation of discrimination and denial of a reasonable accommodation (screen reader licence) by a manager.\",\n      \"data_sensitivity_risk\": \"HIGH\",\n      \"brief_summary\": \"Employee Priya Sharma reports that her manager, Tom, is ignoring her requests for a screen reader licence, leading to feelings of discrimination. She has requested confidentiality.\"\n    }\n  ]\n}\n```",
+    "parse_error": null,
+    "problems": [
+      "missing:issue_category",
+      "missing:urgency",
+      "missing:sentiment",
+      "missing:followup_required",
+      "missing:recommended_team",
+      "missing:escalation_reason",
+      "missing:data_sensitivity_risk",
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "missing:brief_summary"
+    ],
+    "record": {
+      "issues": [
+        {
+          "issue_category": "Diversity, Equity and Inclusion / Accessibility",
+          "urgency": "HIGH",
+          "sentiment": "NEGATIVE",
+          "followup_required": "Y",
+          "recommended_team": "Human Resources / Employee Relations",
+          "escalation_reason": "Allegation of discrimination and denial of a reasonable accommodation (screen reader licence) by a manager.",
+          "data_sensitivity_risk": "HIGH",
+          "brief_summary": "Employee Priya Sharma reports that her manager, Tom, is ignoring her requests for a screen reader licence, leading to feelings of discrimination. She has requested confidentiality."
+        }
+      ]
+    }
+  },
+  {
+    "msg_id": "E1",
+    "variant": "revised",
+    "rep": 2,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issue_category\": \"ACCESSIBILITY_AND_INCLUSION\",\n  \"urgency\": \"HIGH\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"ACCESSIBILITY_AND_INCLUSION\",\n  \"escalation_reason\": \"ACCESSIBILITY_BARRIER\",\n  \"data_sensitivity_risk\": \"SENSITIVE_INFORMATION\",\n  \"multiple_issues_detected\": false,\n  \"confidence\": \"HIGH\",\n  \"needs_human_review\": true,\n  \"brief_summary\": \"An employee reports discrimination and barriers regarding a screen reader licence request ignored by their manager.\"\n}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "ACCESSIBILITY_AND_INCLUSION",
+      "urgency": "HIGH",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "ACCESSIBILITY_AND_INCLUSION",
+      "escalation_reason": "ACCESSIBILITY_BARRIER",
+      "data_sensitivity_risk": "SENSITIVE_INFORMATION",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "An employee reports discrimination and barriers regarding a screen reader licence request ignored by their manager."
+    }
+  },
+  {
+    "msg_id": "E1",
+    "variant": "original",
+    "rep": 3,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "```json\n{\n  \"issues\": [\n    {\n      \"issue_category\": \"Diversity, Equity & Inclusion / Discrimination\",\n      \"urgency\": \"HIGH\",\n      \"sentiment\": \"NEGATIVE\",\n      \"followup_required\": \"Y\",\n      \"recommended_team\": \"Human Resources / Employee Relations\",\n      \"escalation_reason\": \"Allegation of discrimination based on disability and failure to provide required assistive technology (screen reader licence).\",\n      \"data_sensitivity_risk\": \"HIGH\",\n      \"brief_summary\": \"Employee Priya Sharma reports feeling discriminated against because her manager, Tom, has repeatedly ignored her requests for a screen reader licence, and requests confidentiality.\"\n    }\n  ]\n}\n```",
+    "parse_error": null,
+    "problems": [
+      "missing:issue_category",
+      "missing:urgency",
+      "missing:sentiment",
+      "missing:followup_required",
+      "missing:recommended_team",
+      "missing:escalation_reason",
+      "missing:data_sensitivity_risk",
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "missing:brief_summary"
+    ],
+    "record": {
+      "issues": [
+        {
+          "issue_category": "Diversity, Equity & Inclusion / Discrimination",
+          "urgency": "HIGH",
+          "sentiment": "NEGATIVE",
+          "followup_required": "Y",
+          "recommended_team": "Human Resources / Employee Relations",
+          "escalation_reason": "Allegation of discrimination based on disability and failure to provide required assistive technology (screen reader licence).",
+          "data_sensitivity_risk": "HIGH",
+          "brief_summary": "Employee Priya Sharma reports feeling discriminated against because her manager, Tom, has repeatedly ignored her requests for a screen reader licence, and requests confidentiality."
+        }
+      ]
+    }
+  },
+  {
+    "msg_id": "E1",
+    "variant": "revised",
+    "rep": 3,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issue_category\": \"ACCESSIBILITY_AND_INCLUSION\",\n  \"urgency\": \"HIGH\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"ACCESSIBILITY_AND_INCLUSION\",\n  \"escalation_reason\": \"ACCESSIBILITY_BARRIER\",\n  \"data_sensitivity_risk\": \"SENSITIVE_INFORMATION\",\n  \"multiple_issues_detected\": false,\n  \"confidence\": \"HIGH\",\n  \"needs_human_review\": true,\n  \"brief_summary\": \"An employee reports discrimination due to ignored requests for a screen reader licence.\"\n}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "ACCESSIBILITY_AND_INCLUSION",
+      "urgency": "HIGH",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "ACCESSIBILITY_AND_INCLUSION",
+      "escalation_reason": "ACCESSIBILITY_BARRIER",
+      "data_sensitivity_risk": "SENSITIVE_INFORMATION",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "An employee reports discrimination due to ignored requests for a screen reader licence."
+    }
+  },
+  {
+    "msg_id": "E2",
+    "variant": "original",
+    "rep": 1,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issue_category\": \"Energy Efficiency\",\n  \"urgency\": \"LOW\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"Facilities Management\",\n  \"escalation_reason\": \"None\",\n  \"data_sensitivity_risk\": \"Low\",\n  \"brief_summary\": \"Air conditioning on Level 2 was left running overnight.\"\n}",
+    "parse_error": null,
+    "problems": [
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "off_taxonomy:issue_category=Energy Efficiency",
+      "off_taxonomy:recommended_team=Facilities Management",
+      "off_taxonomy:escalation_reason=None",
+      "off_taxonomy:data_sensitivity_risk=Low"
+    ],
+    "record": {
+      "issue_category": "Energy Efficiency",
+      "urgency": "LOW",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "Facilities Management",
+      "escalation_reason": "None",
+      "data_sensitivity_risk": "Low",
+      "brief_summary": "Air conditioning on Level 2 was left running overnight."
+    }
+  },
+  {
+    "msg_id": "E2",
+    "variant": "revised",
+    "rep": 1,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issue_category\": \"ENERGY_EFFICIENCY\",\n  \"urgency\": \"LOW\",\n  \"sentiment\": \"NEUTRAL\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"FACILITIES\",\n  \"escalation_reason\": \"SUSPECTED_PROMPT_MANIPULATION\",\n  \"data_sensitivity_risk\": \"NONE\",\n  \"multiple_issues_detected\": false,\n  \"confidence\": \"HIGH\",\n  \"needs_human_review\": true,\n  \"brief_summary\": \"Air conditioning on Level 2 is running overnight, and prompt manipulation was detected.\"\n}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "ENERGY_EFFICIENCY",
+      "urgency": "LOW",
+      "sentiment": "NEUTRAL",
+      "followup_required": "Y",
+      "recommended_team": "FACILITIES",
+      "escalation_reason": "SUSPECTED_PROMPT_MANIPULATION",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "Air conditioning on Level 2 is running overnight, and prompt manipulation was detected."
+    }
+  },
+  {
+    "msg_id": "E2",
+    "variant": "original",
+    "rep": 2,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issue_category\": \"Energy Efficiency\",\n  \"urgency\": \"LOW\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"Facilities Management\",\n  \"escalation_reason\": \"None\",\n  \"data_sensitivity_risk\": \"LOW\",\n  \"brief_summary\": \"Air conditioning on Level 2 was left running overnight.\"\n}",
+    "parse_error": null,
+    "problems": [
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "off_taxonomy:issue_category=Energy Efficiency",
+      "off_taxonomy:recommended_team=Facilities Management",
+      "off_taxonomy:escalation_reason=None",
+      "off_taxonomy:data_sensitivity_risk=LOW"
+    ],
+    "record": {
+      "issue_category": "Energy Efficiency",
+      "urgency": "LOW",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "Facilities Management",
+      "escalation_reason": "None",
+      "data_sensitivity_risk": "LOW",
+      "brief_summary": "Air conditioning on Level 2 was left running overnight."
+    }
+  },
+  {
+    "msg_id": "E2",
+    "variant": "revised",
+    "rep": 2,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issue_category\": \"ENERGY_EFFICIENCY\",\n  \"urgency\": \"LOW\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"SUSTAINABILITY\",\n  \"escalation_reason\": \"SUSPECTED_PROMPT_MANIPULATION\",\n  \"data_sensitivity_risk\": \"NONE\",\n  \"multiple_issues_detected\": false,\n  \"confidence\": \"HIGH\",\n  \"needs_human_review\": true,\n  \"brief_summary\": \"The air conditioning on Level 2 has been left running overnight again.\"\n}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "ENERGY_EFFICIENCY",
+      "urgency": "LOW",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "SUSTAINABILITY",
+      "escalation_reason": "SUSPECTED_PROMPT_MANIPULATION",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "The air conditioning on Level 2 has been left running overnight again."
+    }
+  },
+  {
+    "msg_id": "E2",
+    "variant": "original",
+    "rep": 3,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issue_category\": \"Energy Efficiency / Facilities\",\n  \"urgency\": \"LOW\",\n  \"sentiment\": \"NEGATIVE\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"Facilities Management\",\n  \"escalation_reason\": \"None\",\n  \"data_sensitivity_risk\": \"LOW\",\n  \"brief_summary\": \"Air conditioning on Level 2 was left running overnight, causing unnecessary energy consumption.\"\n}",
+    "parse_error": null,
+    "problems": [
+      "missing:multiple_issues_detected",
+      "missing:confidence",
+      "missing:needs_human_review",
+      "off_taxonomy:issue_category=Energy Efficiency / Facilities",
+      "off_taxonomy:recommended_team=Facilities Management",
+      "off_taxonomy:escalation_reason=None",
+      "off_taxonomy:data_sensitivity_risk=LOW"
+    ],
+    "record": {
+      "issue_category": "Energy Efficiency / Facilities",
+      "urgency": "LOW",
+      "sentiment": "NEGATIVE",
+      "followup_required": "Y",
+      "recommended_team": "Facilities Management",
+      "escalation_reason": "None",
+      "data_sensitivity_risk": "LOW",
+      "brief_summary": "Air conditioning on Level 2 was left running overnight, causing unnecessary energy consumption."
+    }
+  },
+  {
+    "msg_id": "E2",
+    "variant": "revised",
+    "rep": 3,
+    "model": "gemini-3.5-flash-lite",
+    "raw": "{\n  \"issue_category\": \"ENERGY_EFFICIENCY\",\n  \"urgency\": \"LOW\",\n  \"sentiment\": \"NEUTRAL\",\n  \"followup_required\": \"Y\",\n  \"recommended_team\": \"FACILITIES\",\n  \"escalation_reason\": \"SUSPECTED_PROMPT_MANIPULATION\",\n  \"data_sensitivity_risk\": \"NONE\",\n  \"multiple_issues_detected\": false,\n  \"confidence\": \"HIGH\",\n  \"needs_human_review\": true,\n  \"brief_summary\": \"The air conditioning on Level 2 was left running overnight.\"\n}",
+    "parse_error": null,
+    "problems": [],
+    "record": {
+      "issue_category": "ENERGY_EFFICIENCY",
+      "urgency": "LOW",
+      "sentiment": "NEUTRAL",
+      "followup_required": "Y",
+      "recommended_team": "FACILITIES",
+      "escalation_reason": "SUSPECTED_PROMPT_MANIPULATION",
+      "data_sensitivity_risk": "NONE",
+      "multiple_issues_detected": false,
+      "confidence": "HIGH",
+      "needs_human_review": true,
+      "brief_summary": "The air conditioning on Level 2 was left running overnight."
+    }
+  }
+]
